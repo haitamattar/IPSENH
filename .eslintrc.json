@@ -1,0 +1,43 @@
+{
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/base",
+    "plugin:vue/essential"
+  ],
+
+  "rules": {
+    "no-undef":  "off",
+    "no-unused-vars": "off",
+    "no-var": "error",
+    "curly": "error",
+    "brace-style": "error",
+    "semi": "error",
+    "yoda": ["error", "always"],
+    "space-before-blocks": ["error", {
+      "functions": "always",
+      "keywords": "always",
+      "classes": "always"
+    }],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": "always",
+      "ObjectPattern": {
+        "multiline": true
+      },
+      "ImportDeclaration": "never",
+      "ExportDeclaration": {
+        "multiline": true,
+        "minProperties": 3
+      }
+    }]
+  },
+
+  "plugins": [
+    "jasmine"
+  ],
+
+  "env": {
+    "jasmine": true
+  }
+
+}

@@ -1,0 +1,10 @@
+body {
+  background-color: white;
+}
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar-app {
+  background-image: $default-header-gradient;
+}

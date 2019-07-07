@@ -1,0 +1,23 @@
+.social-footer {
+  width: 100%;
+  height: 300px;
+  color: white;
+  padding-top: 50px;
+  padding-left: 200px;
+  background-image: $default-header-gradient;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .social-footer {
+    padding-left: 20px;
+    height: auto;
+  }
+
+  .social-col {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}

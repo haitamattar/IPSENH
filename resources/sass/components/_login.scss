@@ -1,0 +1,104 @@
+
+.login-title {
+  color: $primary;
+}
+
+.rounded-corners {
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  width: 200px;
+  border: 0pt;
+}
+
+.btn-primary {
+  background-color: $primary;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background-color: $white;
+  color: $primary;
+  font-weight: bold;
+}
+
+#login-left-white {
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#login-col {
+  animation: fadeInRight 1s;
+  margin-top: 50px;
+  margin-left: 80px;
+  height: 100%;
+}
+
+#login-sign-in-title {
+  color: $primary;
+}
+
+#login-sign-in-subtitle {
+  color: $secondary-dark;
+}
+
+#login-register-title {
+  margin-top: 50px;
+}
+
+#login-register-btn {
+  animation: fadeInLeft 1s;
+  margin-top: 52px;
+  background-color: #FFF;
+}
+
+#login-register-btn:hover{
+    color: #051A57;
+    background-color: #d6d6d6;
+}
+
+.login-form-label {
+  color: $primary;
+  margin-top: 40px;
+  margin-left: 13px;
+  margin-bottom: 5px;
+}
+
+#login-sign-in-btn {
+  margin-top: 30px;
+}
+
+#login-register-col {
+  color: $secondary-light;
+  margin-left: 80px;
+}
+
+#login-forgot-password-link {
+  color: $secondary-dark;
+  margin-top: 20px;
+}
+
+#external-login-title {
+  animation: fadeInLeft 1s;
+  margin-top: 30px;
+  color: $primary;
+}
+
+#external-login {
+  margin-top: 20px;
+}
+
+.logo-32px {
+  height: 32px;
+}
+
+.error-text {
+  color: $red;
+}

@@ -1,0 +1,231 @@
+#profile_page{
+    background-color: white;
+}
+
+.profileIntroHeader{
+    width: 100%;
+    max-height:250px;
+    background-color: greenyellow;
+    background: url("/images/laptop.jpg") center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:10px;
+    margin-bottom:10px;
+    color: #FFF;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-top: -30px;
+
+}
+
+/****************************************/
+/*************   header    **************/
+/****************************************/
+#header_profile_picture{
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    position: absolute;top:0px;right:0px;
+    width:100px;
+    height: 100px;
+}
+
+/****************************************/
+/**********   profile_nav    ************/
+/****************************************/
+#profile_nav nav, #profile_nav ul{
+    display:inline-block;
+    padding: 0 !important;
+    margin:0;
+    position: relative;
+    top:0%;
+    left:50%;
+    padding-top: 30px;
+    transform:translate(-50%,0%);
+}
+
+#profile_nav a{
+    text-decoration: none;
+    color: $secondary-light;
+    font-size: 1.2em;
+}
+
+#profile_nav a:hover{
+    color:red;
+}
+
+#profile_nav li{
+    list-style: none;
+    float:left;
+    margin-left:1em;
+}
+
+#profile_nav li:first-child{
+    margin-left:0;
+}
+
+.clear{
+    clear:both;
+}
+
+/***********************************/
+/********    Experiences   *********/
+/***********************************/
+#experiences{
+    margin-bottom: 30px;
+
+    h4{
+        margin-bottom: 20px;
+    }
+
+    h2{
+        font-weight:bold;;
+    }
+
+    .col-md-4{
+        padding: 0px;
+    }
+
+    div{
+        margin-top:15px;
+    }
+
+    div:first-child{
+        margin-top: 0;
+    }
+}
+
+
+
+/**************************************/
+/******     Followers    **************/
+/**************************************/
+#followers {
+    h4{
+        display: inline;
+        margin-bottom: 10px;
+    }
+    button{
+        display: inline;
+        width: 100px;
+    }
+}
+
+#profile_follow_btn{
+    margin-bottom: 8px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10pt;
+    height: 30px;
+}
+
+/**************************************/
+/*********   Projects    **************/
+/**************************************/
+#projects{
+    margin-top:20px;
+    margin-bottom: 20px;
+
+    h4{
+        margin-bottom: 30px;
+    }
+}
+
+#projects h2{
+    font-weight:bold;;
+}
+
+#projects div div{
+    margin-top: 30px;
+}
+
+#projects div:nth-child(-n+3){
+    margin-top: 0;
+}
+
+/**************************************/
+/*********       Blogs     ************/
+/**************************************/
+#blogs{
+    margin-top:20px;
+
+    h4{
+        margin-bottom: 20px;
+    }
+}
+
+#blogs div{
+    margin-top:30px;
+}
+
+#blogs div:nth-child(-n+4){
+    margin-top:0;
+}
+
+#blogs h2{
+    font-weight:bold;;
+}
+
+/**************************************/
+/*********       Skills      **********/
+/**************************************/
+#skills{
+    padding-top: 50px;
+    margin-top:20px;
+    padding-bottom: 50px;
+}
+
+#skills h2,#skills p{
+    font-weight:bold;;
+}
+
+.searchSkillInput{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 250px;
+    height: 40px;
+}
+
+/**************************************/
+/*********   profile_footer  **********/
+/**************************************/
+#profile_footer{
+    background-color: $default-header-gradient;
+    min-height:150px;
+    color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#profile_footer div{
+    padding:10px 0;
+}
+
+#profile_footer h3{
+    font-weight:bold;
+    text-align: left;
+}
+
+#profile_footer_contact{
+    p{
+        text-align: left;
+        margin-bottom: 20px;
+        max-width: 200px;
+    }
+}
+
+#profile_footer_social a{
+    text-decoration: none;
+    color: $secondary-light;
+}
+
+.bioUserProfile{
+    margin-bottom: 5px;
+}
+
+.countryUserProfile{
+    margin-bottom: 45px;
+}

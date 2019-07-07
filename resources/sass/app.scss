@@ -1,0 +1,527 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// font
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800');
+
+// animations
+@import '_animations.scss';
+
+// WYSIWYG editor
+@import "~vue-wysiwyg/dist/vueWysiwyg.css";
+
+// Component scss
+
+@import 'components/login';
+@import 'components/register';
+@import 'components/navbar';
+@import 'components/project';
+@import 'components/profilePage';
+
+@import 'components/partials/imagedescription';
+@import 'components/partials/textdescription';
+@import 'components/partials/footer';
+@import 'components/partials/socialfooter';
+@import 'components/partials/createProject';
+@import 'components/partials/modal';
+
+@import 'components/partials/profilePage/experienceCard';
+@import 'components/partials/profilePage/followerCard';
+@import 'components/partials/profilePage/projectCard';
+@import 'components/partials/profilePage/blogCard';
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800');
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    font-family: 'Muli';
+    background-image: $main-gradient;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form-control {
+    background-color: $secondary-light;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    color: #FFF;
+    font-size: 20pt;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.introText{
+    h1{
+        padding-top: 20px;
+        color: white;
+        text-align: left;
+        line-height: 36px;
+        font-size: 20pt;
+        font-weight: 300;
+        padding-bottom: 50px;
+        animation: fadeInLeft 2s;
+    }
+
+    .btn {
+        border-radius: 50px;
+        background-color: #FFF;
+        color: #05164C;
+        padding-left: 40px;
+        padding-right: 40px;
+        animation: fadeInLeft 3s;
+        border: 0;
+    }
+
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .show > .btn-primary.dropdown-toggle {
+        background-color: #dddddd;
+        color: #05164C;
+    }
+}
+
+#showcaseImg1 {
+    width: 100%;
+    animation: fadeInRight 2s;
+}
+
+.intro {
+    margin-bottom: 200px;
+}
+
+.gitUtils {
+    h2 {
+        color: #FFF;
+        text-align: center;
+        padding-bottom: 50px;
+        line-height: 36px;
+        font-size: 20pt;
+        font-weight: 300;
+    }
+    animation: fadeIn 2s;
+}
+
+#gitHubUtilImg {
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+#gitLabUtilImg {
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+#BitUtilImg {
+    margin-top: 200px;
+    height: 20px;
+    display: block;
+    margin: auto;
+}
+
+.bitBucketLogo {
+    padding-top: 5px;
+}
+
+#showcase2 {
+    animation: fadeInTop 2s;
+    padding-top: 40px;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+#showUserVistors {
+    width: 100%;
+    height: 500px;
+    background-color: #FFF;
+    color: #000;
+    margin-top: 40px;
+    padding: 50px;
+
+    h2 {
+        text-align: right;
+        padding-bottom: 50px;
+        line-height: 36px;
+        font-size: 20pt;
+        font-weight: 300;
+    }
+}
+
+#showcase3 {
+    padding-top: 40px;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.bg-custom {
+    margin-bottom: 70px;
+    background-color: #FFF;
+    border: 0;
+    box-shadow: none;
+    font-family: 'Muli';
+}
+
+.gitLogo {
+    margin-bottom: 50px;
+}
+
+.searchUserTitle {
+    margin-top: 80px;
+    color: #FFF;
+    text-align: center;
+}
+
+.searchUtils {
+    label {
+        color: #FFF;
+        display: block;
+    }
+}
+
+.usersOverview {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #FFF;
+    margin-bottom: 200px;
+}
+
+.userSearchViewImg {
+    width: 70px;
+}
+
+.LoadingSearchStatus{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.customSearchUserOverviewCard {
+    animation: fadeIn 1s;
+}
+
+
+.skillsSearchOverview {
+    span {
+        padding: 6px;
+        font-size: 9pt;
+        color: #FFF;
+        background: #38B9FF;
+        padding-right: 8px;
+        padding-left: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+.roundedCorners {
+    border-radius: 50px;
+}
+
+.customInput1 {
+    background-color: white;
+    color: $secondary-dark;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.cutomBtn1 {
+    background-color: #FFF;
+    color: $primary;
+
+    &:hover {
+        color: $primary-highlight;
+        background-color: #ededed;
+    }
+
+    &:active {
+        color: $primary-highlight;
+        background-color: #ededed;
+    }
+}
+
+.userSkillTag{
+    margin-right: 10px;
+}
+
+.settingsHeadTitle{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 100px;
+    color: #FFF;
+    background: url('/images/building.jpg') center center;
+    background-size: cover;
+}
+.editUserContainer {
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.marginEditUser {
+  margin: 10px;
+}
+
+.editUserFieldsPadding {
+  padding: 1%;
+}
+
+.avatarSize {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.editUserTitle {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  color: white;
+}
+
+.addExperience{
+    background-color: #FFF;
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+}
+
+.settingsHeadTitle{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 100px;
+    color: #FFF;
+    background: url('/images/building.jpg') center center;
+    background-size: cover;
+}
+
+.addExperience{
+    background-color: #FFF;
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+}
+
+
+// Animations
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+//#uploadAvatar {
+//  margin-left:auto;
+//  margin-right: auto;
+//  //min-width: 350px;
+//}
+
+//#avatarPreview {
+//  max-height: 400px;
+//  max-width: 400px;
+//
+//}
+
+.marginEditUser {
+  margin: 10px;
+    width: 48%;
+
+}
+
+.rounded-corner {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    border: 0pt;
+    padding-left: 20px;
+}
+
+.editUserFieldsPadding {
+  padding: 1%;
+}
+
+.avatarSize {
+  max-height: 600px;
+  max-width: 600px;
+}
+
+.editUserTitle {
+  padding-top: 2%;
+  //padding-bottom: 2%;
+
+  color: white;
+}
+
+.editUserErrorLabel {
+  color: red;
+  font-size: 0.8em;
+  max-width: 200px;
+}
+
+.noBorder{
+    border: 0px;
+}
+
+.profileImgSettings {
+  padding: 0.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #dee2e6;
+  border-radius: 20rem;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 30px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.profileImgSearch {
+  background-color: #f8fafc;
+  border: 0px;
+  border-radius: 20rem;
+  height: 80px;
+  width: 80px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.profileImgFollower {
+  background-color: #f8fafc;
+  border: 0px;
+  border-radius: 20rem;
+  height: 70px;
+  width: 70px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.profileImg {
+  background-color: #f8fafc;
+  border: 0px;
+  border-radius: 20rem;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.profileImgProject {
+  background-color: #f8fafc;
+  border: 0px;
+  border-radius: 20rem;
+  height: 100px;
+  width: 100px;
+  background-position: center center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.addExpBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rowFollowers{
+    margin-top: 20px;
+}
+
+.topUserProfile{
+    margin-top: 25px;
+}
+
+.notFoundText{
+    color: #FFF;
+    text-align: center;
+    margin-top: 150px;
+}
+
+//.navbar {
+//  display: flex;
+//  justify-content: flex-end;
+//}
+
+.no-x-overflow {
+  overflow-x: hidden;
+}
+
+.image-desc-img-right{
+    padding: 0px;
+    .imageProjectShowcase{
+        height: 700px;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.image-desc-img-left{
+    padding: 0px;
+    .imageProjectShowcase{
+        height: 700px;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

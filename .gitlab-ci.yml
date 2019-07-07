@@ -1,0 +1,78 @@
+image: registry.attardev.com/root/portfolio:latest
+
+services:
+  - mysql:5.7
+
+variables:
+  MYSQL_DATABASE: homestead
+  MYSQL_ROOT_PASSWORD: secret
+  DB_HOST: mysql
+  DB_USERNAME: root
+
+stages:
+- backend_test
+- frontend_test
+- analysis
+- build
+- deploy
+
+backend_test:
+  stage: backend_test
+  script:
+    - cp .env.example .env
+    - composer install
+    - php artisan key:generate
+    - php vendor/bin/codecept run
+  only: 
+    - master
+    - development
+    - merge_requests
+
+frontend_test:
+    stage: frontend_test
+    script:
+    - apt install -y libfontconfig
+    - npm install
+    - npm run test
+    only: 
+    - master
+    - development
+    - merge_requests
+    
+
+deploy_production:
+ stage: deploy
+ allow_failure: false
+ script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ls
+    - ~/.composer/vendor/bin/envoy run deploy -v
+ environment:
+    name: production
+    url: http://kanfoes.com
+ when: manual
+ only:
+    - master
+
+sonarqube:
+  stage: analysis
+  tags:
+    - sonar
+  image: ciricihq/gitlab-sonar-scanner
+  allow_failure: true
+  variables:
+    SONAR_URL: http://136.144.214.88:9000
+    SONAR_SOURCES: ./app
+    SONAR_ANALYSIS_MODE: publish
+    SONAR_PROJECT_KEY: ipsenh
+    SONAR_LOGIN: 950eeeffdae670abaf59925b02b9460f523a81c1
+  script:
+    - gitlab-sonar-scanner
+  only: 
+    - master
+    - development
+    - merge_requests
